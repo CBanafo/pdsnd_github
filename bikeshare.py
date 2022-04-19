@@ -207,6 +207,14 @@ def user_stats(df):
               youngest_user_type_gender)
     except:
         print("\nYounger User for each Gender of specific user type:\nNo data available for this Part")
+    
+    # Displaying the oldest user for each user type by gender
+    try:
+        oldest_user_type_gender = df.groupby(["User Type", "Gender"])['Birth Year'].max()
+        print('\nOldest User for each Gender of specific user Type\n', oldest_user_type_gender)
+    except:
+        print("\nOldest User for each Gender of specific user type:\nNo data available for this Part")
+
     # TO DO: Display earliest, most recent, and most common year of birth
 
     try:
