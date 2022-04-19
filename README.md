@@ -1,4 +1,4 @@
->## Explore US Bike Share Data
+># Exploring US Bike Share Data
 
 ### April 4th, 2022
 This project was completed on this date
